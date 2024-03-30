@@ -1,0 +1,123 @@
+// couleurs
+$light-red: rgba(255, 220, 209, 1);
+$light-green: rgba(185, 234, 168, 1);
+$light-blue: rgba(178, 227, 255, 1);
+
+// grid
+@mixin grid($val, $gap) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: $gap;
+}
+
+$border: .5rem solid rgba(0,0,0,.2);
+$box-shadow: 0rem 13px 19px rgba(0,0,0, .1);
+
+.container{
+    h2{
+        margin: 1rem 0;
+        font-size: 3rem;
+        font-weight: bold
+    }
+
+
+    .card-container{
+        padding: 3rem 0;
+
+        
+        .card{
+            padding: 2rem 2rem;
+            text-align: left;
+            background: white;
+            box-shadow: $box-shadow;
+            min-width: 100px;
+            width: 17rem;
+            max-width: 19rem;
+            
+            h3{
+                font-size : 1.5rem;
+                font-weight: 700;
+                margin: 1rem 0;
+                
+            }
+
+            .image-container{
+                width: 70px;
+                height: 76px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                
+                img{
+                    margin: auto;
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            p{
+                font-size: 1.1rem;
+            }
+            
+            .cont1{
+                background: $light-red;
+            }
+
+            .cont2{
+                background: $light-green;
+            }
+
+            .cont3{
+                background: $light-blue;
+            }
+
+            .stick{
+                width: 25%;
+                margin-bottom: 0.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .card-container{
+        @include grid(20rem, 5rem );
+
+        .card{
+            margin: auto;
+        }
+    }
+}
+
+@media (min-width:992px) and (max-width:1045px){
+    
+    #advice {
+        padding: 9% 2%;
+
+        .container .card-container {
+            @include grid( 10rem, 1rem );
+
+            font-size: 0.9rem;
+
+            .card{
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 1046px) and  ( max-width:1240px){
+    #advice {
+        padding: 9% 2%;
+        .container{
+            .card-container{
+                @include grid(14rem, 1rem);
+            }
+        }
+    }
+}
+
+@media (min-width: 1241px){
+    .card-container{
+        @include grid(17rem, 2rem);
+    }
+}

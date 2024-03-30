@@ -1,0 +1,44 @@
+#footer .foot {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 3rem;
+  padding: 2rem;
+  justify-content: center;
+}
+#footer .foot .bloc h3 {
+  margin: 1rem 0;
+  font-weight: 700;
+}
+#footer .foot .bloc .content {
+  display: flex;
+  flex-direction: column;
+}
+#footer .foot .bloc .content a {
+  margin: 0.5rem 0;
+  color: rgb(35, 166, 240);
+  text-decoration: none;
+}
+#footer .copyright {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1.5rem;
+  background: rgb(242, 240, 240);
+}
+
+@media (max-width: 615px) {
+  #footer .foot {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #footer .foot .bloc {
+    text-align: center;
+  }
+}
+@media (min-width: 616px) and (max-width: 870px) {
+  #footer .foot {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 13rem;
+  }
+}/*# sourceMappingURL=footer.component.css.map */

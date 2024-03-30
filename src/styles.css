@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  scale: 1;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+}
+section {
+  padding: 9% 13%;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: rgb(115, 115, 115);
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.blue {
+  color: rgb(35, 166, 240);
+}
+
+.red {
+  color: rgb(231, 64, 64);
+}
+
+.gray {
+  color: rgb(115, 115, 115);
+}
+
+.l-gray {
+  color: rgb(200, 197, 197);
+}
+
+.green {
+  color: rgb(55, 179, 55);
+}
+
+.blue-bg {
+  background-color: rgb(35, 166, 240);
+}
+
+.red-bg {
+  background-color: rgb(231, 64, 64);
+  color: white;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.stick {
+  display: inline-block;
+  width: 6rem;
+  padding: 0.1rem;
+}
+
+.fa-star, .fa-star-half-alt {
+  color: rgb(255, 206, 49);
+}
+
+.fab {
+  color: rgb(35, 166, 240);
+  margin: 0.5rem;
+  margin-top: 2rem;
+  scale: 1.4;
+}/*# sourceMappingURL=styles.css.map */

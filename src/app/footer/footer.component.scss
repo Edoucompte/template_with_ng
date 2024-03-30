@@ -1,0 +1,60 @@
+$blue: rgba(35, 166, 240, 1);
+
+@mixin grid($val, $gap) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: $gap;
+}
+
+#footer {
+    .foot{
+        @include grid(10rem, 3rem);
+        padding: 2rem;
+        justify-content: center;
+
+
+        .bloc{
+            
+            h3{
+                margin: 1rem 0;
+                font-weight: 700;
+            }
+
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                a{
+                    margin: .5rem 0;
+                    color: $blue;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .copyright{
+        text-align: center;
+        text-transform: capitalize;
+        padding: 1.5rem;
+        background: rgba(242, 240, 240, 1); 
+    }
+}
+
+@media (max-width: 615px){
+    #footer .foot{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .bloc{
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 616px) and (max-width:870px){
+    #footer .foot{
+        @include grid(10rem, 13rem);
+    }
+}

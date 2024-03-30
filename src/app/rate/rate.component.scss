@@ -1,0 +1,73 @@
+@mixin grid($val, $gap) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: $gap;
+}
+
+#rate{
+    padding: 9% 13%;
+}
+
+h2{
+    margin: 1rem 0;
+    font-size: 3rem;
+    font-weight: bold
+}
+
+.opinion-container{
+    @include grid(17rem, 1rem);
+    margin: 5rem 0;
+
+    
+    .opinion{
+        width: 11rem;
+        p{
+            text-align: center;
+        }
+
+        .stars{
+            margin: 0 1.5rem;
+        }
+
+        .poster{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem 0;
+
+            img{
+                border-radius: 2rem;
+            }
+
+            p{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media (max-width:870px){
+    
+    #rate{
+        .opinion-container{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            scale: 1;
+
+            .opinion{
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 871px) and  (max-width:1045px){
+    #rate .opinion-container{
+        @include grid(10rem, 1rem);
+        margin: 3rem 0;
+        scale: 0.8;
+    }   
+}

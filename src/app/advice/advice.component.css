@@ -1,0 +1,92 @@
+.container h2 {
+  margin: 1rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.container .card-container {
+  padding: 3rem 0;
+}
+.container .card-container .card {
+  padding: 2rem 2rem;
+  text-align: left;
+  background: white;
+  box-shadow: 0rem 13px 19px rgba(0, 0, 0, 0.1);
+  min-width: 100px;
+  width: 17rem;
+  max-width: 19rem;
+}
+.container .card-container .card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.container .card-container .card .image-container {
+  width: 70px;
+  height: 76px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.container .card-container .card .image-container img {
+  margin: auto;
+  width: 32px;
+  height: 32px;
+}
+.container .card-container .card p {
+  font-size: 1.1rem;
+}
+.container .card-container .card .cont1 {
+  background: rgb(255, 220, 209);
+}
+.container .card-container .card .cont2 {
+  background: rgb(185, 234, 168);
+}
+.container .card-container .card .cont3 {
+  background: rgb(178, 227, 255);
+}
+.container .card-container .card .stick {
+  width: 25%;
+  margin-bottom: 0.8rem;
+}
+
+@media (max-width: 991px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 5rem;
+  }
+  .card-container .card {
+    margin: auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1045px) {
+  #advice {
+    padding: 9% 2%;
+  }
+  #advice .container .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+  #advice .container .card-container .card {
+    margin: auto;
+  }
+}
+@media (min-width: 1046px) and (max-width: 1240px) {
+  #advice {
+    padding: 9% 2%;
+  }
+  #advice .container .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+  }
+}
+@media (min-width: 1241px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=advice.component.css.map */

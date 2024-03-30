@@ -1,0 +1,169 @@
+#sale .container h2 {
+  margin: 1rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#sale .card-container {
+  align-items: center;
+  margin-top: 5rem;
+}
+#sale .card-container .card {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  position: relative;
+  border: none;
+}
+#sale .card-container .card img {
+  width: 100%;
+  height: 280px;
+}
+#sale .card-container .card .onImage {
+  position: absolute;
+}
+#sale .card-container .card .onImage .status {
+  padding: 0.4rem 1rem;
+  border-radius: 0.3rem;
+  position: inherit;
+  left: 0.9rem;
+  top: 1.3rem;
+}
+#sale .card-container .card .onImage .logos {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  position: inherit;
+  left: 5rem;
+  top: 14rem;
+}
+#sale .card-container .card .onImage .logos div {
+  padding: 12px 10px 9px 10px;
+  background: white;
+  border-radius: 20px;
+}
+#sale .card-container .card .onImage .logos div .logo {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+#sale .card-container .card .content {
+  width: 280px;
+  padding: 1rem;
+}
+#sale .card-container .card .content h3 {
+  font-weight: bold;
+}
+#sale .card-container .card .content .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 280px;
+}
+#sale .card-container .card .content .flex .rate {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+#sale .card-container .card .content .sector {
+  margin: 1rem 0;
+}
+#sale .card-container .card .content .ico {
+  width: 15px;
+  height: 15px;
+}
+#sale .card-container .card .content .ico img {
+  width: 15px;
+  height: 15px;
+}
+#sale .card-container .card .content .numberSold {
+  margin: 0.6rem 0;
+}
+#sale .card-container .card .content .price {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+#sale .card-container .card .content .price span {
+  margin: 0 1rem;
+}
+#sale .card-container .card .content .flx {
+  display: flex;
+  justify-content: space-between;
+}
+#sale .card-container .card .content .flx span {
+  border: none;
+  font-size: 0.9rem;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#sale .card-container .card .content .flx .progress {
+  display: flex;
+  flex-direction: column;
+}
+#sale .card-container .card .content a {
+  position: relative;
+  top: 1.3rem;
+  left: 30%;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgb(35, 166, 240);
+  text-decoration: none;
+}
+
+@media (max-width: 1052px) {
+  #sale .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    scale: 1;
+  }
+  #sale .card-container .card {
+    margin: auto;
+  }
+}
+@media (min-width: 1053px) and (max-width: 1277px) {
+  #sale .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+    scale: 1;
+    margin: 9% 4%;
+  }
+  #sale .card-container .card {
+    width: 12.5rem;
+  }
+  #sale .card-container .card img {
+    height: 12.5rem;
+  }
+  #sale .card-container .card .onImage .logos {
+    top: 9rem;
+    left: 2rem;
+  }
+  #sale .card-container .card .content {
+    width: 12.5rem;
+  }
+  #sale .card-container .card .content h3 {
+    font-size: 1.3rem;
+  }
+  #sale .card-container .card .content p {
+    font-size: 0.8rem;
+  }
+  #sale .card-container .card .content .flx span {
+    font-size: 0.7rem;
+  }
+  #sale .card-container .card .content a {
+    font-size: 0.8rem;
+    left: 20%;
+  }
+}
+@media (min-width: 1278px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=sale.component.css.map */

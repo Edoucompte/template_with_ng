@@ -1,0 +1,60 @@
+#rate {
+  padding: 9% 13%;
+}
+
+h2 {
+  margin: 1rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.opinion-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1rem;
+  margin: 5rem 0;
+}
+.opinion-container .opinion {
+  width: 11rem;
+}
+.opinion-container .opinion p {
+  text-align: center;
+}
+.opinion-container .opinion .stars {
+  margin: 0 1.5rem;
+}
+.opinion-container .opinion .poster {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.opinion-container .opinion .poster img {
+  border-radius: 2rem;
+}
+.opinion-container .opinion .poster p {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+@media (max-width: 870px) {
+  #rate .opinion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    scale: 1;
+  }
+  #rate .opinion-container .opinion {
+    margin: auto;
+  }
+}
+@media (min-width: 871px) and (max-width: 1045px) {
+  #rate .opinion-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+    margin: 3rem 0;
+    scale: 0.8;
+  }
+}/*# sourceMappingURL=rate.component.css.map */

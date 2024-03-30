@@ -1,0 +1,70 @@
+<div id="header">
+    <div id="menu">
+        <h1>BrandName</h1>
+        <nav [ngClass]="{'active':menuClicked}">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div id="logging">
+            <img class="btn-menu" src="../../assets/images/logo-menu.png" alt="bouton menu" (click)="toggleMenu()">
+            <span id="login" class="login" (click)="toggleLogin()" >Login</span>
+            <span id="login-btn" class="fas fa-user login" (click)="toggleLogin()"></span>
+            <span id="signup" class="btn signup" (click)="toggleSignup()">Become a member <i class="fas fa-arrow-right"></i></span>
+        </div>
+    </div>
+
+    <div id="content">
+        <p id="p1" class="blue">Online training</p>
+        <p id="p2">25K+ students</p>
+        <p id="p2_">trust us</p>
+        <p id="p3">We know how large objects will act, but things <br> on a small scale just do not act that way</p>
+        <a href="#" class="btn">Join us</a>
+    </div>
+
+    <!-- header section ends -->
+
+    <!-- login section starts -->
+
+    <div class="login_sec" [ngClass]="{'active': loginClicked}">
+    <div class="content">
+        <h2>Connect to your account</h2>
+        <form action="">
+            <input type="text" name="name" placeholder="your name or pseudo" id="name">
+
+            <input type="password" name="password" placeholder="your password" id="pass">
+
+            <p> <input type="checkbox" name="remember" id="remember"> <label for="remember">Remember me?</label></p>
+
+            <input type="submit" value="Log in">
+        </form>
+        <p>Forget password? <a href="#" class="blue forget">click here</a></p>
+        <p>Don't already have an account? <a href="#" class="signup blue" (click)="toggleSignup()"> click here</a></p>
+    </div>
+    </div>
+
+    <!-- login section ends -->
+
+
+    <!-- signup section starts -->
+    <div class="signupSec" [ngClass]="{'active': signupClicked}">
+    <div class="content">
+        <h2>Create a new account</h2>
+        <form action="">
+            <input type="text" name="name" placeholder="your name or pseudo" id="name">
+
+            <input type="email" name="email" placeholder="your email" id="email">
+
+            <input type="password" name="password" placeholder="your password" id="pass">
+            <input type="password" name="cpassword" placeholder="your password again" id="cpass">
+
+            <input type="submit" value="Sign up">
+        </form>
+        <p> <input type="checkbox" name="remember" id="remember"> <label for="remember">Remember me?</label></p>
+        <p>Already have an account? <a href="#login_sec" class="login blue" (click)="toggleLogin()">log in</a></p>
+    </div>
+    </div>
+
+</div>
+<!-- signup section ends -->

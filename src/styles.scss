@@ -1,1 +1,130 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    scale: 1;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+$dark-bg: rgba(0, 0, 0, 0.5);
+
+$blue: rgba(35, 166, 240, 1);
+$light-blue: rgba(178, 227, 255, 1);
+
+$red: rgba(231, 64, 64, 1);
+$light-red: rgba(255, 220, 209, 1);
+
+$gray: rgb(115, 115, 115);
+$light-gray: rgb(200, 197, 197);
+
+$green: rgb(55, 179, 55);
+$light-green: rgba(185, 234, 168, 1);
+
+$yellow: rgba(255, 206, 49, 1);
+$border: .5rem solid rgba(0,0,0,.2);
+$box-shadow: 0rem 13px 19px rgba(0,0,0, .1);
+
+@mixin grid($val, $gap) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: $gap;
+}
+
+
+// animation
+@keyframes fadeUp{
+    0%{
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+}
+
+section{
+    padding: 9% 13%;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.1rem;
+    color: $gray;
+}
+
+
+.btn{
+    cursor: pointer;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+}
+
+
+//colors
+.blue{
+    color: $blue;
+}
+
+.red{
+    color: $red;
+}
+.gray{
+    color: $gray;
+}
+.l-gray{
+    color: $light-gray;
+}
+.green{
+    color: $green;
+}
+
+.blue-bg{
+    background-color: $blue;
+}
+
+.red-bg{
+    background-color: $red;
+    color: white;
+}
+//colors class end
+
+.bold{
+    font-weight: bolder;
+}
+
+
+// trait
+.stick{
+    display: inline-block;
+    width: 6rem;
+    padding: .1rem;
+}
+
+//stars
+.fa-star, .fa-star-half-alt{
+    color: $yellow;
+}
+
+//Social network
+.fab{
+    color: $blue;
+    margin: .5rem;
+    margin-top: 2rem;
+    scale: 1.4;
+}

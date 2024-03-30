@@ -1,0 +1,58 @@
+#course {
+  display: flex;
+  flex-direction: rows;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  display: inline-block;
+  width: 30rem;
+}
+.img-container img {
+  width: 30rem;
+}
+
+.writing {
+  display: inline-block;
+  position: relative;
+  left: 3rem;
+  top: 1.5rem;
+  width: 29rem;
+}
+.writing span {
+  padding: 0.2rem;
+}
+.writing h2 {
+  margin: 1.7rem 0;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: bold;
+}
+.writing p {
+  margin-bottom: 1.3rem;
+}
+
+@media (max-width: 870px) {
+  #course .img-container {
+    width: 20rem;
+  }
+  #course .img-container img {
+    width: 20rem;
+  }
+  #course .writing {
+    scale: 0.8;
+  }
+}
+@media (max-width: 1045px) {
+  #course {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media (min-width: 1046px) and (max-width: 1210px) {
+  #course {
+    margin: auto;
+  }
+}/*# sourceMappingURL=course.component.css.map */
